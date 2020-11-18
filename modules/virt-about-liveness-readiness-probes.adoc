@@ -6,11 +6,8 @@
 
 = About liveness and readiness probes
 
-When a VirtualMachineInstance (VMI) fails, _liveness probes_ stop the VMI.
-Controllers such as VirtualMachine then spawn other VMIs, restoring virtual
-machine responsiveness.
+When a virtual machine instance (VMI) fails, _liveness probes_ stop the VMI.
+Controllers such as virtual machine then spawn other VMIs, restoring virtual machine responsiveness.
 
-_Readiness probes_ tell services and endpoints that the VirtualMachineInstance
-is ready to receive traffic from services. If readiness probes fail,
-the VirtualMachineInstance is removed from
-applicable endpoints until the probe recovers.
+_Readiness probes_ tell services and endpoints that the virtual machine instance
+is ready to receive traffic from services. If readiness probes fail, the virtual machine instance is removed from applicable endpoints until the probe recovers.
