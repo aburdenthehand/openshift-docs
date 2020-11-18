@@ -158,7 +158,7 @@ spec:
 Updating the `vm-import-operator` deployment updates the `vm-import-controller` config map.
 endif::[]
 ifeval::["{VirtVersion}" >= "2.5"]
-. Patch the `vm-import-controller-config` config map to apply the new ConfigMap:
+. Patch the `vm-import-controller-config` config map to apply the new config map:
 +
 [source,terminal]
 ----

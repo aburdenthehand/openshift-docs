@@ -6,10 +6,10 @@
 = Confirming policy updates on nodes
 
 A `NodeNetworkConfigurationPolicy` manifest describes your requested network configuration for nodes in the cluster.
-The policy object includes your requestd network configuration and the status of execution of the Policy on the cluster as a whole.
+The policy object includes your requestd network configuration and the status of execution of the policy on the cluster as a whole.
 
 
-When you apply a policy, a `NodeNetworkConfigurationEnactment` is created for every node in the cluster. The Enactment is a read-only object that represents the status of execution of the Policy on that node.
+When you apply a policy, a `NodeNetworkConfigurationEnactment` is created for every node in the cluster. The Enactment is a read-only object that represents the status of execution of the policy on that node.
 If the policy fails to be applied on the node, the enactment for that node includes a traceback for troubleshooting.
 
 .Procedure
@@ -21,7 +21,7 @@ If the policy fails to be applied on the node, the enactment for that node inclu
 $ oc get nncp
 ----
 
-. (Optional) If a policy is taking longer than expected to successfully configure, you can inspect the requested state and status conditions of a particular Policy:
+. (Optional) If a policy is taking longer than expected to successfully configure, you can inspect the requested state and status conditions of a particular policy:
 +
 [source,terminal]
 ----

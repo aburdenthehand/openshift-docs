@@ -21,7 +21,7 @@ If any of these prerequisites are not met, host-assisted cloning automatically o
 To initiate cloning of a data volume:
 
 . Create a YAML file for a `DataVolume` object that specifies the name of the
-new data volume, the name and namespace of the source PVC, and the size of the new DataVolume. This example clones a source PVC in block mode, so `volumeMode: Block` is used:
+new data volume, the name and namespace of the source PVC, and the size of the new data volume. This example clones a source PVC in block mode, so `volumeMode: Block` is used:
 +
 [source,yaml]
 ----

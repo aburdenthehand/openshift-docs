@@ -40,7 +40,7 @@ certificate.
 .Procedure
 
 . Identify the following items:
-* The name of the upload data volume that you want to use. If this DataVolume
+* The name of the upload data volume that you want to use. If this data volume
 does not exist, it is created automatically.
 * The size of the data volume, if you want it to be created during the upload
 procedure. The size must be greater than or equal to the size of the disk image.
@@ -70,7 +70,7 @@ parameter. Be aware that when you use the `--insecure` flag, the authenticity of
 the upload endpoint is *not* verified.
 ====
 
-. Optional. To verify that a data volume was created, view all DataVolume objects
+. Optional. To verify that a data volume was created, view all data volume objects
 by running the following command:
 +
 [source,terminal]

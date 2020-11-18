@@ -12,7 +12,7 @@ A container disk can either be imported into a persistent volume claim (PVC) by 
 
 == Importing a container disk into a PVC by using a data volume
 
-Use the Containerized Data Importer (CDI) to import the container disk into a PVC by using a data volume. You can then attach the DataVolume to a virtual machine for persistent storage.
+Use the Containerized Data Importer (CDI) to import the container disk into a PVC by using a data volume. You can then attach the data volume to a virtual machine for persistent storage.
 
 == Attaching a container disk to a virtual machine as a `containerDisk` volume
 

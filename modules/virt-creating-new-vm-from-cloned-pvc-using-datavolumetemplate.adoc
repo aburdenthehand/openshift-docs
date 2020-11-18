@@ -13,7 +13,7 @@ machine.
 
 [NOTE]
 ====
-When a data volume is created as part of the DataVolumeTemplate of a virtual
+When a data volume is created as part of the data volumeTemplate of a virtual
 machine, the lifecycle of the data volume is then dependent on the virtual
 machine. If the virtual machine is deleted, the data volume and associated
 PVC are also deleted.

@@ -15,9 +15,9 @@ The CDIConfig object allows you to define which storage class to use to bind the
 scratch space PVC by setting the `scratchSpaceStorageClass` in the `spec:`
 section of the CDIConfig object.
 
-If the defined storage class does not match a StorageClass in the cluster, then
+If the defined storage class does not match a storage class in the cluster, then
 the default storage class defined for the cluster is used. If there is no
-default storage class defined in the cluster, the StorageClass used to provision
+default storage class defined in the cluster, the storage class used to provision
 the original DV or PVC is used.
 
 [NOTE]

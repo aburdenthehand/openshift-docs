@@ -9,7 +9,7 @@
 = Cloning the persistent volume claim of a virtual machine disk into a new data volume
 
 You can clone a persistent volume claim (PVC) of an existing virtual machine disk
-into a new data volume. The new DataVolume can then be used for a new virtual
+into a new data volume. The new data volume can then be used for a new virtual
 machine.
 
 [NOTE]
