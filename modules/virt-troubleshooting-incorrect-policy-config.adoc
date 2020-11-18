@@ -70,7 +70,7 @@ ens01-bridge-testfail   FailedToConfigure
 +
 However the policy status alone does not indicate if it failed on all nodes or a subset of nodes.
 
-. List the enactments to see if the policy was successful on any of the nodes. If the policy failed for only a subset it suggests the problem is with specific node configuration; if the policy failed on all nodes it suggest the problem is with the Policy.
+. List the enactments to see if the policy was successful on any of the nodes. If the policy failed for only a subset it suggests the problem is with specific node configuration; if the policy failed on all nodes it suggest the problem is with the policy.
 +
 [source,terminal]
 ----

@@ -28,7 +28,7 @@ playbook.
         disks:
           - name: containerdisk
             volume:
-              containerDisk:
+              container disk:
                 image: kubevirt/cirros-container-disk-demo:latest
             disk:
               bus: virtio

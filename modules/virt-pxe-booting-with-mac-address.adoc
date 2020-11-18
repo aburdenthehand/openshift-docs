@@ -7,7 +7,7 @@
 
 As an administrator, you can boot a client over the network by first creating a
 NetworkAttachmentDefinition object for your PXE network. Then, reference
-the NetworkAttachmentDefinition in your virtual machine instance configuration
+the network attachment definition in your virtual machine instance configuration
 file before you start the virtual machine instance. You can also specify a MAC
 address in the virtual machine instance configuration file, if required by the
 PXE server.
@@ -21,7 +21,7 @@ PXE server.
 
 . Configure a PXE network on the cluster:
 
-.. Create the NetworkAttachmentDefinition file for PXE network `pxe-net-conf`:
+.. Create the network attachment definition file for PXE network `pxe-net-conf`:
 +
 [source,yaml]
 ----
@@ -52,7 +52,7 @@ The virtual machine instance will be attached to the bridge `br1` through an
 access port with the requested VLAN.
 ====
 
-. Create the NetworkAttachmentDefinition object by using the file you created
+. Create the network attachment definition object by using the file you created
 in the previous step:
 +
 [source,terminal]
@@ -105,7 +105,7 @@ devices:
 
 .. Specify that the network is connected to the previously created
 NetworkAttachmentDefinition. In this scenario, `<pxe-net>` is connected
-to the NetworkAttachmentDefinition called `<pxe-net-conf>`:
+to the network attachment definition called `<pxe-net-conf>`:
 +
 [source,yaml]
 ----
