@@ -16,7 +16,7 @@ If you do not use Red Hat Enterprise Linux CoreOS workers, skip this procedure.
 
 .Prerequisites
 
-* Create a backing directory on each node for the PersistentVolumes (PVs)
+* Create a backing directory on each node for the persistent volumes (PVs)
 that the hostpath provisioner creates.
 
 

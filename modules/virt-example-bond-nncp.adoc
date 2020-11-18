@@ -49,7 +49,7 @@ spec:
         - eth2
       mtu: 1450 <13>
 ----
-<1> Name of the Policy.
+<1> Name of the policy.
 <2> Optional: If you do not include the `nodeSelector`, the Policy applies to all nodes in the cluster.
 <3> This example uses a `hostname` node selector.
 <4> Name of the interface.

@@ -10,7 +10,7 @@ of type `cnv-bridge` to provide Layer-2 networking to pods and virtual machines.
 
 [NOTE]
 ====
-The NetworkAttachmentDefinition must be in the same namespace as the Pod or virtual machine.
+The NetworkAttachmentDefinition must be in the same namespace as the pod or virtual machine.
 ====
 
 .Procedure
@@ -89,7 +89,7 @@ NetworkAttachmentDefinition.
 +
 [NOTE]
 ====
-The virtual machine instance will be connected to both the `default` Pod network and `bridge-net`, which is
+The virtual machine instance will be connected to both the `default` pod network and `bridge-net`, which is
 defined by a NetworkAttachmentDefinition named `a-bridge-network`.
 ====
 

@@ -10,7 +10,7 @@ storage, first create a HostPathProvisioner custom resource.
 
 .Prerequisites
 
-* Create a backing directory on each node for the PersistentVolumes (PVs)
+* Create a backing directory on each node for the persistent volumes (PVs)
 that the hostpath provisioner creates.
 
 * Apply the SELinux context `container_file_t` to the PV
@@ -52,7 +52,7 @@ spec:
     useNamingPrefix: "false" <2>
 ----
 <1> Specify the backing directory where you want the provisioner to create PVs.
-<2> Change this value to `true` if you want to use the name of the PersistentVolumeClaim (PVC)
+<2> Change this value to `true` if you want to use the name of the persistent volume claim (PVC)
 that is bound to the created PV as the prefix of the directory name.
 +
 [NOTE]

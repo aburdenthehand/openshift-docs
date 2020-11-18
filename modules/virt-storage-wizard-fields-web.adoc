@@ -37,7 +37,7 @@
 [discrete]
 == Advanced storage settings
 The following advanced storage settings are available for *Blank*, *URL*, and *Attach Cloned Disk* disks.
-These parameters are optional. If you do not specify these parameters, the system uses the default values from the `kubevirt-storage-class-defaults` ConfigMap.
+These parameters are optional. If you do not specify these parameters, the system uses the default values from the `kubevirt-storage-class-defaults` config map.
 
 [cols="2a,3a,5a"]
 |===

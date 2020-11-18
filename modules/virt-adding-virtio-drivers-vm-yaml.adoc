@@ -39,7 +39,7 @@ spec:
           cdrom:
             bus: sata
 volumes:
-  - containerDisk:
+  - container disk:
       image: container-native-virtualization/virtio-win
     name: virtiocontainerdisk
 ----

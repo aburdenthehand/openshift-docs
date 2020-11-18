@@ -3,9 +3,9 @@
 // * virt/virtual_machines/virtual_disks/virt-preparing-cdi-scratch-space.adoc
 
 [id="virt-defining-storageclass-in-cdi-configuration_{context}"]
-= Defining a StorageClass in the CDI configuration
+= Defining a storage class in the CDI configuration
 
-Define a StorageClass in the CDI configuration to dynamically provision scratch
+Define a storage class in the CDI configuration to dynamically provision scratch
 space for CDI operations.
 
 .Procedure

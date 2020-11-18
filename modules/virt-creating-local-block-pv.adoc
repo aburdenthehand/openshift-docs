@@ -5,9 +5,9 @@
 // * virt/virtual_machines/importing_vms/virt-importing-virtual-machine-images-datavolumes-block.adoc
 
 [id="virt-creating-local-block-pv_{context}"]
-= Creating a local block PersistentVolume
+= Creating a local block persistent volume
 
-Create a local block PersistentVolume (PV) on a node by populating a file and
+Create a local block persistent volume (PV) on a node by populating a file and
 mounting it as a loop device. You can then reference this loop device in a
 PV configuration as a `Block` volume and use it as a block device for a
 virtual machine image.
@@ -73,4 +73,4 @@ spec:
 ----
 # oc create -f <local-block-pv10.yaml><1>
 ----
-<1> The filename of the PersistentVolume created in the previous step.
+<1> The filename of the persistent volume created in the previous step.

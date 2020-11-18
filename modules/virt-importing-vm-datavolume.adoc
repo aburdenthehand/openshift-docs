@@ -3,7 +3,7 @@
 // * virt/virtual_machines/importing_vms/virt-importing-virtual-machine-images-datavolumes.adoc
 
 [id="virt-importing-vm-datavolume_{context}"]
-= Importing a virtual machine image into a PersistentVolumeClaim by using a DataVolume
+= Importing a virtual machine image into a persistent volume claim by using a data volume
 
 You can import a virtual machine image into a PersistentVolumeClaim (PVC) by using a DataVolume. 
 
@@ -14,7 +14,7 @@ To create a virtual machine from an imported virtual machine image, specify the 
 .Prerequisites
 
 * You have installed the OpenShift CLI (`oc`).
-* Your cluster has at least one available PersistentVolume.
+* Your cluster has at least one available persistent volume.
 * To import a virtual machine image you must have the following:
 ** A virtual machine disk image in RAW, ISO, or QCOW2 format, optionally
 compressed by using `xz` or `gz`.
@@ -120,9 +120,9 @@ $ oc create -f vm-<name>-datavolume.yaml
 +
 [NOTE]
 ====
-The `oc create` command creates the DataVolume and the virtual machine.
+The `oc create` command creates the data volume and the virtual machine.
 The CDI controller creates an underlying PVC with the correct annotation, and
-the import process begins. When the import completes, the DataVolume status
+the import process begins. When the import completes, the data volume status
 changes to `Succeeded`, and the virtual machine is allowed to start.
 
 DataVolume provisioning happens in the background, so there is no need to
@@ -138,7 +138,7 @@ import is complete.
 $ oc get pods
 ----
 
-. Monitor the DataVolume status until it shows `Succeeded` by running the following command:
+. Monitor the data volume status until it shows `Succeeded` by running the following command:
 +
 [source,terminal]
 ----

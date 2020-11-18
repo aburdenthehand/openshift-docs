@@ -15,7 +15,7 @@ machine.
 .Prerequisites
 * You must be in the same project as the VMI.
 * The VMI you want to access must be connected
-to the default Pod network by using the `masquerade` binding method.
+to the default pod network by using the `masquerade` binding method.
 * The VMI you want to access must be running.
 * Install the OpenShift CLI (`oc`).
 

@@ -22,7 +22,7 @@
 |List of available NetworkAttachmentDefinition objects.
 
 |Type
-|List of available binding methods. For the default Pod network, `masquerade`
+|List of available binding methods. For the default pod network, `masquerade`
 is the only recommended binding method. For secondary networks, use the `bridge`
 binding method. The `masquerade` method is not supported for non-default
 networks.
