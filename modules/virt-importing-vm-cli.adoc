@@ -5,9 +5,9 @@
 [id="virt-importing-vm-cli_{context}"]
 = Importing a virtual machine with the CLI
 
-You can import a virtual machine with the CLI by creating the secret and virtual machine import Custom Resources (CRs). The secret CR stores the RHV Manager credentials and CA certificate. The virtual machine import CR defines the parameters of the VM import process.
+You can import a virtual machine with the CLI by creating the secret and `VirtualMachineImport` custom resources (CRs). The secret CR stores the RHV Manager credentials and CA certificate. The `VirtualMachineImport` CR defines the parameters of the VM import process.
 
-Optional: You can create a ResourceMapping CR that is separate from the VirtualMachineImport CR. A ResourceMapping CR provides greater flexibility, for example, if you import additional RHV VMs.
+Optional: You can create a ResourceMapping CR that is separate from the `VirtualMachineImport` CR. A ResourceMapping CR provides greater flexibility, for example, if you import additional RHV VMs.
 
 [IMPORTANT]
 ====
@@ -76,7 +76,7 @@ EOF
 ----
 <1> Specify the RHV logical network and vNIC profile.
 <2> Specify the {VirtProductName} network.
-<3> If `storageMappings` are specified in both the ResourceMapping and the virtual machine import CRs, the virtual machine import CR takes precedence.
+<3> If `storageMappings` are specified in both the ResourceMapping and the `VirtualMachineImport` CRs, the `VirtualMachineImport` CR takes precedence.
 <4> Specify the RHV storage domain.
 <5> The default storage class must be `nfs`.
 endif::[]
@@ -107,13 +107,13 @@ EOF
 ----
 <1> Specify the RHV logical network and vNIC profile.
 <2> Specify the {VirtProductName} network.
-<3> If `storageMappings` are specified in both the ResourceMapping and the virtual machine import CRs, the virtual machine import CR takes precedence.
+<3> If `storageMappings` are specified in both the ResourceMapping and the `VirtualMachineImport` CRs, the `VirtualMachineImport` CR takes precedence.
 <4> Specify the RHV storage domain.
 <5> Specify the target storage class as `nfs` or `ocs-storagecluster-ceph-rbd`.
 <6> If you specified the `ocs-storagecluster-ceph-rbd` storage class, you must specify `Block` as the volume mode.
 endif::[]
 
-. Create the virtual machine import CR by running the following command:
+. Create the `VirtualMachineImport` CR by running the following command:
 +
 [source,yaml]
 ----
@@ -166,7 +166,7 @@ EOF
 <6> If you create a ResourceMapping CR, comment out the `mappings` section.
 <7> Specify the logical network and vNIC profile of the source VM.
 <8> Specify the {VirtProductName} network.
-<9> If `storageMappings` are specified in both the ResourceMapping and the virtual machine import CRs, the virtual machine import CR takes precedence.
+<9> If `storageMappings` are specified in both the ResourceMapping and the `VirtualMachineImport` CRs, the `VirtualMachineImport` CR takes precedence.
 <10> Specify the source storage domain.
 <11> Specify the target storage class.
 <12> Specify the source VM disk ID, for example, `8181ecc1-5db8-4193-9c92-3ddab3be7b05`. You can obtain the disk ID by entering `\https://<RHV_Manager_FQDN>/ovirt-engine/api/vms/<VM_ID>` in a web browser on the Manager machine and reviewing the VM details.

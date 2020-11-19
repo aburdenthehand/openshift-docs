@@ -33,7 +33,7 @@ endif::[]
 . Examine the virtual machine disk you want to clone to identify the name and
 namespace of the associated PVC.
 
-. Create a YAML file for a data volume object that specifies the name of the
+. Create a YAML file for a data volume that specifies the name of the
 new data volume, the name and namespace of the source PVC, 
 ifdef::blockstorage[]
 `volumeMode: Block` so that an available block PV is used,

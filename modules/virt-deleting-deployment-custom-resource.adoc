@@ -5,7 +5,7 @@
 //This file contains UI elements and/or package names that need to be updated.
 
 [id="virt-deleting-deployment-custom-resource_{context}"]
-= Deleting the {VirtProductName} Operator deployment custom resource
+= Deleting the {VirtProductName} Operator Deployment custom resource
 
 To uninstall {VirtProductName}, you must first delete the
 *{VirtProductName} Operator Deployment* custom resource.

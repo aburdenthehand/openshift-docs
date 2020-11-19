@@ -25,4 +25,4 @@ spec:
         policy: require <2>
 ----
 <1> Name of the CPU feature for the VM or VMI.
-<2> policy attribute for the VM or VMI.
+<2> Policy attribute for the VM or VMI.

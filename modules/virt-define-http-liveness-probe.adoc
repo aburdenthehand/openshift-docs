@@ -15,7 +15,7 @@ liveness probes.
 the following code block as an example. In this example:
 * You configure a probe using `spec.livenessProbe.httpGet`, which queries port `1500` of the
 VirtualMachineInstance, after an initial delay of `120` seconds.
-* The VirtualMachineInstance installs and runs a minimal HTTP server
+* The virtual machineInstance installs and runs a minimal HTTP server
 on port `1500` using `cloud-init`.
 +
 [source,yaml]
@@ -62,7 +62,7 @@ spec:
     name: cloudinitdisk
 ----
 +
-. Create the VirtualMachineInstance by running the following command:
+. Create the virtual machineInstance by running the following command:
 +
 [source,terminal]
 ----

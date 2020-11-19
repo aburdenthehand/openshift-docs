@@ -6,7 +6,7 @@
 = PXE booting with a specified MAC address
 
 As an administrator, you can boot a client over the network by first creating a
-NetworkAttachmentDefinition object for your PXE network. Then, reference
+`NetworkAttachmentDefinition` object for your PXE network. Then, reference
 the network attachment definition in your virtual machine instance configuration
 file before you start the virtual machine instance. You can also specify a MAC
 address in the virtual machine instance configuration file, if required by the
@@ -52,7 +52,7 @@ The virtual machine instance will be attached to the bridge `br1` through an
 access port with the requested VLAN.
 ====
 
-. Create the network attachment definition object by using the file you created
+. Create the network attachment definition by using the file you created
 in the previous step:
 +
 [source,terminal]

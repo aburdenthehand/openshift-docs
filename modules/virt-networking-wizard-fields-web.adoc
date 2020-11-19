@@ -19,7 +19,7 @@
 |Indicates the model of the Network Interface Card. Supported values are *e1000e* and *virtio*.
 
 |Network
-|List of available network attachment definition objects.
+|List of available network attachment definitions.
 
 |Type
 |List of available binding methods. For the default pod network, `masquerade`

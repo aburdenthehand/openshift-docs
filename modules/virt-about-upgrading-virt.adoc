@@ -35,7 +35,7 @@ used to manage the virtual machine process.
 
 * Upgrading does not interrupt network connections.
 
-* data volumes and their associated persistent volume claims are preserved during
+* Data volumes and their associated persistent volume claims are preserved during
 upgrade.
 +
 [IMPORTANT]

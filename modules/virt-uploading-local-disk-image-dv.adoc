@@ -70,7 +70,7 @@ parameter. Be aware that when you use the `--insecure` flag, the authenticity of
 the upload endpoint is *not* verified.
 ====
 
-. Optional. To verify that a data volume was created, view all data volume objects
+. Optional. To verify that a data volume was created, view all data volumes
 by running the following command:
 +
 [source,terminal]

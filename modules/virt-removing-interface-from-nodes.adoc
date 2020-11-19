@@ -10,7 +10,7 @@ the `state` of the interface to `absent`.
 
 [NOTE]
 ====
-Deleting the policy that added an interface does not change the configuration of the network policy on the node.
+Deleting the policy that added an interface does not change the configuration of the node network policy on the node.
 Although a `NodeNetworkConfigurationPolicy` is an object in the cluster, it only represents the requested configuration. +
 Similarly, removing an interface does not delete the policy.
 ====

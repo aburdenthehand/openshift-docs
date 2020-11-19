@@ -3,18 +3,18 @@
 // * virt/node_network/virt-configuring-node-network-policy
 
 [id="virt-confirming-policy-updates-on-nodes_{context}"]
-= Confirming policy updates on nodes
+= Confirming node network policy updates on nodes
 
 A `NodeNetworkConfigurationPolicy` manifest describes your requested network configuration for nodes in the cluster.
-The policy object includes your requestd network configuration and the status of execution of the policy on the cluster as a whole.
+The node network policy includes your requested network configuration and the status of execution of the policy on the cluster as a whole.
 
 
-When you apply a policy, a `NodeNetworkConfigurationEnactment` is created for every node in the cluster. The Enactment is a read-only object that represents the status of execution of the policy on that node.
+When you apply a node network policy, a `NodeNetworkConfigurationEnactment` is created for every node in the cluster. The node network enactment is a read-only object that represents the status of execution of the policy on that node.
 If the policy fails to be applied on the node, the enactment for that node includes a traceback for troubleshooting.
 
 .Procedure
 
-. To confirm that a policy has been applied to the cluster, list the Policies and their status:
+. To confirm that a policy has been applied to the cluster, list the policies and their status:
 +
 [source,terminal]
 ----

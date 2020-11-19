@@ -16,12 +16,12 @@ You can delete {VirtProductName} by using the CLI.
 
 [NOTE]
 ====
-When you delete the subscription of the {VirtProductName} operator in the OLM by using the CLI, the cluster service version (CSV) object is not deleted from the cluster. To completely uninstall {VirtProductName}, you must explicitly delete the CSV.
+When you delete the subscription of the {VirtProductName} operator in the OLM by using the CLI, the `ClusterServiceVersion` (CSV) object is not deleted from the cluster. To completely uninstall {VirtProductName}, you must explicitly delete the CSV.
 ====
 
 .Procedure
 
-. Delete the HyperConverged Custom Resource:
+. Delete the `HyperConverged` custom resource:
 +
 [source,terminal]
 ----
