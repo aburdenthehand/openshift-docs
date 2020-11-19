@@ -44,7 +44,7 @@ fedora-vm-ssh   NodePort   127.0.0.1      <none>        22:32551/TCP   6s
 +
 In this example, the service acquired the `32551` port.
 
-. Log in to  the VMI via SSH. Use the `ipAddress` of any of the cluster
+. Log in to the VMI via SSH. Use the `ipAddress` of any of the cluster
 nodes and the port that you found in the previous step:
 +
 [source,terminal]

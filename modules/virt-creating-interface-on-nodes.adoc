@@ -39,14 +39,14 @@ spec:
             - name: eth1
 ----
 <1> Name of the policy.
-<2> Optional: If you do not include the `nodeSelector`, the Policy applies to all nodes in the cluster.
+<2> Optional: If you do not include the `nodeSelector`, the policy applies to all nodes in the cluster.
 <3> This example uses the `node-role.kubernetes.io/worker: ""` node selector to select all worker nodes in the cluster.
 <4> Optional: Human-readable description for the interface.
 
-. Create the policy:
+. Create the node network policy:
 +
 [source,terminal]
 ----
 $ oc apply -f <br1-eth1-policy.yaml> <1>
 ----
-<1> File name of the policy manifest.
+<1> File name of the `NodeNetworkConfigurationPolicy` manifest.

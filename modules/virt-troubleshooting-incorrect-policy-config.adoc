@@ -6,8 +6,8 @@
 = Troubleshooting an incorrect node network configuration policy configuration
 
 You can apply changes to the node network configuration across your entire cluster by applying a
-NodeNetworkConfigurationPolicy. If you apply an incorrect configuration, you can use the
-following example to troubleshoot and correct the failed network policy.
+node network configuration policy. If you apply an incorrect configuration, you can use the
+following example to troubleshoot and correct the failed node network policy.
 
 In this example, a Linux bridge policy is applied to an example cluster that has 3 master nodes and 3 worker nodes.
 The policy fails to be applied because it references an incorrect interface. To find the error, investigate
@@ -70,7 +70,7 @@ ens01-bridge-testfail   FailedToConfigure
 +
 However the policy status alone does not indicate if it failed on all nodes or a subset of nodes.
 
-. List the enactments to see if the policy was successful on any of the nodes. If the policy failed for only a subset it suggests the problem is with specific node configuration; if the policy failed on all nodes it suggest the problem is with the policy.
+. List the node network enactments to see if the policy was successful on any of the nodes. If the policy failed for only a subset it suggests the problem is with specific node configuration; if the policy failed on all nodes it suggest the problem is with the policy.
 +
 [source,terminal]
 ----
@@ -103,7 +103,7 @@ This command returns a large traceback that has been edited for brevity:
 .Example output
 [source,terminal]
 ----
-error reconciling node network configuration policy at desired state apply: , failed to execute nmstatectl set --no-commit --timeout 480: 'exit status 1' ''
+error reconciling NodeNetworkConfigurationPolicy at desired state apply: , failed to execute nmstatectl set --no-commit --timeout 480: 'exit status 1' ''
 ...
 libnmstate.error.NmstateVerificationError:
 desired

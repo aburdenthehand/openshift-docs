@@ -10,7 +10,7 @@ the `state` of the interface to `absent`.
 
 [NOTE]
 ====
-Deleting the policy that added an interface does not change the configuration of the node network policy on the node.
+Deleting the node network policy that added an interface does not change the configuration of the policy on the node.
 Although a `NodeNetworkConfigurationPolicy` is an object in the cluster, it only represents the requested configuration. +
 Similarly, removing an interface does not delete the policy.
 ====
@@ -35,11 +35,11 @@ spec:
         state: absent <4>
 ----
 <1> Name of the policy.
-<2> Optional: If you do not include the `nodeSelector`, the Policy applies to all nodes in the cluster.
+<2> Optional: If you do not include the `nodeSelector`, the policy applies to all nodes in the cluster.
 <3> This example uses the `node-role.kubernetes.io/worker: ""` node selector to select all worker nodes in the cluster.
 <4> Changing the state to `absent` removes the interface.
 
-. Update the  policy on the node and remove the interface:
+. Update the policy on the node and remove the interface:
 +
 [source,terminal]
 ----

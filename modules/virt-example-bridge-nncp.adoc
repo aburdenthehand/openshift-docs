@@ -37,7 +37,7 @@ spec:
             - name: eth1 <11>
 ----
 <1> Name of the policy.
-<2> Optional: If you do not include the `nodeSelector`, the Policy applies to all nodes in the cluster.
+<2> Optional: If you do not include the `nodeSelector`, the policy applies to all nodes in the cluster.
 <3> This example uses a `hostname` node selector.
 <4> Name of the interface.
 <5> Optional: Human-readable description of the interface.
