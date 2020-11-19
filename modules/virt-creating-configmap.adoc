@@ -106,7 +106,7 @@ EOF
 <1> Optional: You can change the value of the `namespace` parameter.
 <2> Specify the REST API name of the RHV operating system and its corresponding VM template as shown in the following example.
 +
-.ConfigMap example
+.Config map example
 [source,yaml]
 ----
 $ cat <<EOF | oc apply -f -
@@ -151,7 +151,7 @@ spec:
       value: default <2>
 ----
 <1> Add `value: os-configmap` to the `name: OS_CONFIGMAP_NAME` parameter.
-<2> Optional: You can add this value if you changed the namespace in the ConfigMap.
+<2> Optional: You can add this value if you changed the namespace in the config map.
 
 . Save the `kubevirt-hyperconverged-operator.v{HCOVersion}.yaml` file.
 +

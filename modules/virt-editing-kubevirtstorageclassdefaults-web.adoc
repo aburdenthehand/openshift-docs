@@ -35,7 +35,7 @@ data:
 <3> If you add an access mode for a storage class, replace the `<new>` part of the parameter with the storage class name.
 <4> If you add a volume mode for a storage class, replace the `<new>` part of the parameter with the storage class name.
 
-. Click *Save* to update the ConfigMap. 
+. Click *Save* to update the config map. 
 
 
 
