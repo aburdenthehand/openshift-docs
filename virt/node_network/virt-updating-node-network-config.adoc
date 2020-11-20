@@ -24,7 +24,7 @@ include::modules/virt-removing-interface-from-nodes.adoc[leveloffset=+1]
 include::modules/virt-restoring-node-network-configuration.adoc[leveloffset=+1]
 
 [id="virt-nmstate-example-policy-configurations"]
-== Example Policy configurations for different interfaces
+== Example policy configurations for different interfaces
 
 include::modules/virt-example-bridge-nncp.adoc[leveloffset=+2]
 

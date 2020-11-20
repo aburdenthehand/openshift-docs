@@ -4,7 +4,7 @@ include::modules/virt-document-attributes.adoc[]
 :context: virt-uploading-local-disk-images-virtctl
 toc::[]
 
-You can upload a locally stored disk image to a new or existing DataVolume by using the
+You can upload a locally stored disk image to a new or existing data volume by using the
 `virtctl` command-line utility.
 
 == Prerequisites

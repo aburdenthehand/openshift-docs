@@ -1,5 +1,5 @@
 [id="virt-importing-virtual-machine-images-datavolumes"]
-= Importing virtual machine images with DataVolumes
+= Importing virtual machine images with data volumes
 include::modules/virt-document-attributes.adoc[]
 :context: virt-importing-virtual-machine-images-datavolumes
 toc::[]
@@ -19,7 +19,7 @@ The resizing procedure varies based on the operating system installed on the vir
 
 * If the endpoint requires a TLS certificate, the certificate must be
 xref:../../../virt/virtual_machines/importing_vms/virt-tls-certificates-for-dv-imports.adoc#virt-adding-tls-certificates-for-authenticating-dv-imports_virt-tls-certificates-for-dv-imports[included in a ConfigMap]
-in the same namespace as the DataVolume and referenced in the DataVolume configuration.
+in the same namespace as the data volume and referenced in the data volume configuration.
 
 * To import a container disk: 
 ** You might need to xref:../../../virt/virtual_machines/virtual_disks/virt-using-container-disks-with-vms.adoc#virt-preparing-container-disk-for-vms_virt-using-container-disks-with-vms[prepare a container disk from a virtual machine image] and store it in your container registry before importing it.
