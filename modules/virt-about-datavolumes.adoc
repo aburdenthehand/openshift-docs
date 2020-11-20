@@ -14,7 +14,7 @@
 = About data volumes
 
 `DataVolume` objects are custom resources that are provided by the Containerized
-Data Importer (CDI) project. DataVolumes orchestrate import, clone, and upload
+Data Importer (CDI) project. Data volumes orchestrate import, clone, and upload
 operations that are associated with an underlying persistent volume claim (PVC).
-DataVolumes are integrated with KubeVirt, and they prevent a virtual machine
+Data volumes are integrated with {VirtProductName}, and they prevent a virtual machine
 from being started before the PVC has been prepared.

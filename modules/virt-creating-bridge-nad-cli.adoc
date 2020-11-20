@@ -84,8 +84,7 @@ spec:
 ...
 ----
 <1> The `name` value for the bridge interface and network must be the same.
-<2> You must substitute the actual `name` value from the
-NetworkAttachmentDefinition.
+<2> You must substitute the actual `name` value from the network attachment definition.
 +
 [NOTE]
 ====

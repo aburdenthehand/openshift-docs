@@ -3,7 +3,7 @@
 // * virt/node_network/virt-updating-node-network-config.adoc
 
 [id="virt-example-ethernet-nncp_{context}"]
-= Example: Ethernet interface NodeNetworkConfigurationPolicy
+= Example: Ethernet interface node network configuration policy
 
 Configure an Ethernet interface on nodes in the cluster by applying a `NodeNetworkConfigurationPolicy` manifest to the cluster.
 

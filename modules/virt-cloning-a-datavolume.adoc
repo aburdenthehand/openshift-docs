@@ -47,7 +47,7 @@ spec:
 <3> The name of the source PVC.
 <4> The size of the new data volume. You must allocate enough space, or the
 cloning operation fails. The size must be the same as or larger than the source PVC.
-<5> Specifies that the destination is a block PV
+<5> Specifies that the destination is a block PV.
 
 . Start cloning the PVC by creating the data volume:
 +
@@ -58,7 +58,7 @@ $ oc create -f <cloner-datavolume>.yaml
 +
 [NOTE]
 ====
-DataVolumes prevent a virtual machine from starting before the PVC is prepared,
+Data volumes prevent a virtual machine from starting before the PVC is prepared,
 so you can create a virtual machine that references the new data volume while the
 PVC clones.
 ====

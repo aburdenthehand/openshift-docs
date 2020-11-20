@@ -5,13 +5,12 @@
 [id="virt-troubleshooting-incorrect-policy-config_{context}"]
 = Troubleshooting an incorrect node network configuration policy configuration
 
-You can apply changes to the node network configuration across your entire cluster by applying a
-node network configuration policy. If you apply an incorrect configuration, you can use the
-following example to troubleshoot and correct the failed node network policy.
+You can apply changes to the node network configuration across your entire cluster by applying a node network configuration policy.
+If you apply an incorrect configuration, you can use the following example to troubleshoot and correct the failed node network policy.
 
 In this example, a Linux bridge policy is applied to an example cluster that has 3 master nodes and 3 worker nodes.
-The policy fails to be applied because it references an incorrect interface. To find the error, investigate
-the available nmstate resources. You can then update the policy with the correct configuration.
+The policy fails to be applied because it references an incorrect interface.
+To find the error, investigate the available nmstate resources. You can then update the policy with the correct configuration.
 
 .Procedure
 
@@ -188,7 +187,7 @@ difference
 +
 The `NmstateVerificationError` lists the `desired` policy configuration, the `current` configuration of the policy on the node, and the `difference` highlighting the parameters that do not match. In this example, the `port` is included in the `difference`, which suggests that the problem is the port configuration in the policy.
 
-. To ensure that the policy is configured properly, view the network configuration for one or all of the nodes by requesting the `NodeNetworkState`. The following command returns the network configuration for the `master-1` node:
+. To ensure that the policy is configured properly, view the network configuration for one or all of the nodes by requesting the `NodeNetworkState` object. The following command returns the network configuration for the `master-1` node:
 +
 ----
 $ oc get nns master-1 -o yaml

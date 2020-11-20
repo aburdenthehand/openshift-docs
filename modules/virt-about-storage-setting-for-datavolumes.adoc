@@ -5,7 +5,7 @@
 [id="virt-about-kubevirtstorageclassdefaults_{context}"]
 = About storage settings for data volumes
 
-DataVolumes require a defined _access mode_ and _volume mode_ to be created in the web console.
+Data volumes require a defined _access mode_ and _volume mode_ to be created in the web console.
 These storage settings are configured by default with a `ReadWriteOnce` access mode and `Filesystem` volume mode.
 
 You can modify these settings by editing the `kubevirt-storage-class-defaults` config map in the `openshift-cnv` namespace.
@@ -21,7 +21,7 @@ All data volumes that you create in the web console use the default storage sett
 [id="virt-datavolumes-access-modes_{context}"]
 == Access modes
 
-DataVolumes support the following access modes:
+Data volumes support the following access modes:
 
 * `ReadWriteOnce`: The volume can be mounted as read-write by a single node. `ReadWriteOnce` has greater versatility and is the default setting.
 * `ReadWriteMany`: The volume can be mounted as read-write by many nodes. `ReadWriteMany` is required for some features, such as live migration of virtual machines between nodes.
@@ -31,7 +31,7 @@ DataVolumes support the following access modes:
 [id="virt-datavolumes-volume-modes_{context}"]
 == Volume modes
 
-The volume mode defines if a volume is intended to be used with a formatted filesystem or to remain in raw block state. DataVolumes support the following volume modes:
+The volume mode defines if a volume is intended to be used with a formatted filesystem or to remain in raw block state. Data volumes support the following volume modes:
 
-* `Filesystem`: Creates a filesystem on the DataVolume. This is the default setting.
-* `Block`: Creates a block DataVolume. Only use `Block` if the underlying storage supports it.
+* `Filesystem`: Creates a filesystem on the data volume. This is the default setting.
+* `Block`: Creates a block data volume. Only use `Block` if the underlying storage supports it.
