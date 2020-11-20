@@ -5,7 +5,6 @@
 [id="virt-importing-vm-datavolume_{context}"]
 = Importing a virtual machine image into a persistent volume claim by using a data volume
 
-<<<<<<< HEAD
 You can import a virtual machine image into a PersistentVolumeClaim (PVC) by using a DataVolume. 
 
 The virtual machine image can be hosted at an HTTP or HTTPS endpoint, or the image can be built into a container disk and stored in a container registry.
@@ -28,24 +27,6 @@ credentials needed to access the data source. For example: `http://www.example.c
 
 . Optional: If your data source requires authentication credentials, edit the
 `endpoint-secret.yaml` file, and apply the updated configuration to the cluster:
-=======
-To create a virtual machine from an imported image, specify the image location in the `VirtualMachine` configuration file before you create the virtual machine.
-
-.Prerequisites
-
-* Install the OpenShift CLI (`oc`).
-* A virtual machine disk image, in RAW, ISO, or QCOW2 format, optionally compressed by using `xz` or `gz`.
-* An `HTTP` endpoint where the image is hosted, along with any authentication credentials needed to access the data source.
-* At least one available persistent volume.
-
-.Procedure
-
-. Identify an `HTTP` file server that hosts the virtual disk image that you want to import. You need the complete URL in the correct format:
-+
-* `http://www.example.com/path/to/data`
-
-. If your data source requires authentication credentials, edit the `endpoint-secret.yaml` file, and apply the updated configuration to the cluster:
->>>>>>> Manual check of edge cases. Picked up on some UI and terminology mistakes. Addressed some hard wrapping since that was the reason why some of these weren't picked up initially.
 +
 [source,yaml]
 ----
@@ -68,12 +49,8 @@ data:
 $ oc apply -f endpoint-secret.yaml
 ----
 
-<<<<<<< HEAD
 . Edit the virtual machine configuration file, specifying the data source for
 the virtual machine image you want to import. In this example, a Fedora image is imported from an `http` source:
-=======
-. Edit the virtual machine configuration file, specifying the data source for the image you want to import. In this example, a Fedora image is imported:
->>>>>>> Manual check of edge cases. Picked up on some UI and terminology mistakes. Addressed some hard wrapping since that was the reason why some of these weren't picked up initially.
 +
 [source,yaml]
 ----
@@ -128,18 +105,11 @@ spec:
         name: datavolumedisk1
 status: {}
 ----
-<<<<<<< HEAD
 <1> The source type to import the image from. This example uses a HTTP endpoint. To import a container disk from a registry, replace `http` with `registry`.
 <2> The source of the virtual machine image you want to import. This example references a virtual machine image at an HTTP endpoint. An example of a container registry endpoint is `url: "docker://kubevirt/fedora-cloud-container-disk-demo:latest"`.
 <3> The `secretRef` parameter is optional.
 <4> The `certConfigMap` is required for communicating with servers that use self-signed certificates or certificates not signed by the system CA bundle. The referenced ConfigMap must be in the same namespace as the DataVolume.
 <5> Specify `type: dataVolume` or `type: ""`. If you specify any other value for `type`, such as `persistentVolumeClaim`, a warning is displayed, and the virtual machine does not start.
-=======
-<1> The `HTTP` source of the image you want to import.
-<2> The `secretRef` parameter is optional.
-<3> The `certConfigMap` is required for communicating with servers that use self-signed certificates or certificates not signed by the system CA bundle. The referenced config map must be in the same namespace as the data volume.
-<4> Specify `type: dataVolume` or `type: ""`. If you specify any other value for `type`, such as `persistentVolumeClaim`, a warning is displayed, and the virtual machine does not start.
->>>>>>> Manual check of edge cases. Picked up on some UI and terminology mistakes. Addressed some hard wrapping since that was the reason why some of these weren't picked up initially.
 
 . Create the virtual machine:
 +
